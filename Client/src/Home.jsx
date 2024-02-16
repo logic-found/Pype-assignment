@@ -100,7 +100,7 @@ const Card = ({ data }) => {
                 {data.buy_price}
             </div>
             <div className="">
-                <span className="font-semibold">Buy Price: </span>
+                <span className="font-semibold">Sell Price: </span>
                 {data.sell_price}
             </div>
         </div>
