@@ -89,12 +89,7 @@ async function fetchData() {
 }
 
 async function scrapeDynamicData(url, compraSelector, ventaSelector) {
-    const browser = await puppeteer.launch({
-        executablePath: await chromium.executablePath,
-        args: chromium.args,
-        defaultViewport: chromium.defaultViewport,
-        headless: chromium.headless,
-    });
+    const browser = await puppeteer.launch();
 
     const page = await browser.newPage();
     await page.setDefaultNavigationTimeout(60000);
